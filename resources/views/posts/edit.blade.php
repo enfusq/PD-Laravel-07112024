@@ -11,6 +11,9 @@
         <label for="content">Content: </label>
         <textarea name="content" id="content">{{ $post->content }}</textarea>
         <br>
+        <label for="published_at">Published at:</label>
+        <input type="date" name="published_at" id="published_at" value="{{ $post->published_at }}">
+        <br>
         <input type="submit" value="Update">
     </form>
 </x-app-layout>

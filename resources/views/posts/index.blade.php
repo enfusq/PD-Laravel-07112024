@@ -6,6 +6,7 @@
             <li>
                 <h2>Title: {{ $post->title }}</h2>
                 <p>Content: {{ $post->content }}</p>
+                <h4>Published at: {{ $post->published_at }}</h4>
                 <div>
                     <a href="/posts/{{ $post->id }}">Show</a>
                     <a href="/posts/{{ $post->id }}/edit">Edit</a>

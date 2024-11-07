@@ -31,7 +31,8 @@ class PostController extends Controller
     {
         $data = [
             'title' => $request->title,
-            'content' => $request->content
+            'content' => $request->content,
+            'published_at' => $request->published_at,
         ];
 
         Post::create($data);
@@ -66,7 +67,8 @@ class PostController extends Controller
 
         $data = [
             'title' => $request->title,
-            'content' => $request->content
+            'content' => $request->content,
+            'published_at' => $request->published_at,
         ];
 
         $post->update($data);
